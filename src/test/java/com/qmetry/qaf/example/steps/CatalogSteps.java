@@ -3,6 +3,10 @@ package com.qmetry.qaf.example.steps;
 import com.qmetry.qaf.automation.step.QAFTestStep;
 import com.qmetry.qaf.example.comp.Catalog;
 
+/**
+ * @author amit.bhoraniya
+ *
+ */
 public class CatalogSteps {
 
 	@QAFTestStep(description = "I select product {0}")

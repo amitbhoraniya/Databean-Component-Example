@@ -5,9 +5,13 @@ import java.util.List;
 import com.qmetry.qaf.automation.ui.annotations.FindBy;
 import com.qmetry.qaf.automation.ui.webdriver.QAFWebComponent;
 
+/**
+ * @author amit.bhoraniya
+ *
+ */
 public class Catalog extends QAFWebComponent {
 
-	@FindBy(locator = "css=.product")
+	@FindBy(locator = "catalog.product.comp")
 	List<Product> products;
 
 	public List<Product> getProducts() {

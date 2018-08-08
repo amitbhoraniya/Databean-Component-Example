@@ -4,6 +4,7 @@ META-DATA: {"description":"Databean example","groups":["SMOKE"]}
 
 	Given get '/'
 	When I register user with 'random' details
+	#to-do
 END
 
 
@@ -12,5 +13,7 @@ META-DATA: {"description":"Component Example","groups":["SMOKE"]}
 
 	Given get '/category.html'
 	When I select product 'Colourful'
+	#to-do
+
 END
 

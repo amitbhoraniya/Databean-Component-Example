@@ -1,1 +1,6 @@
 catalog.comp=id=products
+catalog.product.comp=css=.product
+catalog.product.name=css=h3 a
+catalog.product.price.txt=css=.price
+catalog.product.img=css=.front
+catalog.product.addcart.btn=css=.btn-primary

@@ -4,6 +4,10 @@ import com.qmetry.qaf.automation.data.BaseFormDataBean;
 import com.qmetry.qaf.automation.ui.annotations.UiElement;
 import com.qmetry.qaf.automation.util.Randomizer;
 
+/**
+ * @author amit.bhoraniya
+ *
+ */
 public class UserBean extends BaseFormDataBean {
 
 	@UiElement(fieldLoc = "homepage.regiter.username.textfield", order = 1)

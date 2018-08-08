@@ -5,6 +5,10 @@ import com.qmetry.qaf.automation.step.CommonStep;
 import com.qmetry.qaf.automation.step.QAFTestStep;
 import com.qmetry.qaf.example.beans.UserBean;
 
+/**
+ * @author amit.bhoraniya
+ *
+ */
 public class HomePageSteps {
 
 	@QAFTestStep(description = "I register user with {0} details")
