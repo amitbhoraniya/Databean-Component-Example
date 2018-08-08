@@ -1,0 +1,16 @@
+
+SCENARIO: Databean Example
+META-DATA: {"description":"Databean example","groups":["SMOKE"]}
+
+	Given get '/'
+	When I register user with 'random' details
+END
+
+
+SCENARIO: Component Example
+META-DATA: {"description":"Component Example","groups":["SMOKE"]}
+
+	Given get '/category.html'
+	When I select product 'Colourful'
+END
+
