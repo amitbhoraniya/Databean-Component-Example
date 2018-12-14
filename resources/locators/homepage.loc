@@ -6,6 +6,6 @@ homepage.regiter.username.textfield=css=#register-modal [name="username"]
 homepage.regiter.firstname.textfield=css=#register-modal [name="first-name"]
 homepage.regiter.lastname.textfield=css=#register-modal [name="last-name"]
 homepage.regiter.email.textfield=css=#register-modal [name="email"]
-homepage.regiter.password.textfield=css=#register-modal [name="first-name"]
+homepage.regiter.password.textfield=css=#register-modal [name="password"]
 
 homepage.regiter.submit.btn=css=#register-modal .btn

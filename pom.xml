@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
@@ -13,9 +14,9 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<testSuiteFile>config/testrun_config.xml</testSuiteFile>
-		<sourceVersion>1.7</sourceVersion>
-		<targetVersion>1.7</targetVersion>
-		<qaf.version>2.1.13</qaf.version>
+		<sourceVersion>1.8</sourceVersion>
+		<targetVersion>1.8</targetVersion>
+		<qaf.version>2.1.14-RC1</qaf.version>
 		<test.results.dir>test-results</test.results.dir>
 		<run.time>${maven.build.timestamp}</run.time>
 		<lib.dir>${project.basedir}/lib</lib.dir>
@@ -37,6 +38,23 @@
 
 	<dependencies>
 		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>3.14.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-remote-driver</artifactId>
+			<version>3.14.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.appium/java-client -->
+		<dependency>
+			<groupId>io.appium</groupId>
+			<artifactId>java-client</artifactId>
+			<version>6.1.0</version>
+		</dependency>
+
+		<dependency>
 			<groupId>com.qmetry</groupId>
 			<artifactId>qaf</artifactId>
 			<version>${qaf.version}</version>
@@ -46,9 +64,14 @@
 			<artifactId>qaf-support</artifactId>
 			<version>${qaf.version}</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+		<dependency>
+			<groupId>io.github.bonigarcia</groupId>
+			<artifactId>webdrivermanager</artifactId>
+			<version>3.1.1</version>
+		</dependency>
 	</dependencies>
 	<build>
-
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -109,6 +132,7 @@
 		</plugins>
 		<pluginManagement>
 			<plugins>
+
 				<plugin>
 					<groupId>org.eclipse.m2e</groupId>
 					<artifactId>lifecycle-mapping</artifactId>
